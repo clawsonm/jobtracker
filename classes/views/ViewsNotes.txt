@@ -1,0 +1,13 @@
+status
+-------
+JT_StatusBox: status dropdown list: set initial selection, must return chosen value
+JT_StatusListView: status list with AJAX edits
+JT_StatusEditView: edit single status
+
+generally
+-----------
+JT_DataBoxView: dropdown list: set initial, return selected
+JT_DataListView: list all of data in table popup ajax to edit
+JT_DataEditView: Edit an item of type Data
+
+

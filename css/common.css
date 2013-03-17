@@ -1,0 +1,179 @@
+body {
+    width:97%;
+    margin: 10px auto;
+    text-align: center;
+    background-color: #FFFCEF;
+}
+
+dl,dt,dd {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.togglesection {
+    font-size: medium;
+    font-weight: bold;
+}
+
+.topmenu{
+    margin:10px auto;
+    padding:7px;
+    background-color:#CFEEFF;
+}
+
+.topmenu a{
+    margin:10px;
+    background-color:#A3FFD3;
+    padding: 5px;
+    border: 1px solid #0092F7;
+}
+
+.contentwrapper{
+    width:720px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.notice{
+    width: 10em;
+    margin: 3px auto;
+    padding: 2px;
+    border-style: solid;
+    border-color: #fffddd;
+    border-width: 2px;
+    background-color: #ffeccc;
+    text-align: center;
+}
+
+.loginwrapper{
+    width: 25em;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+label span{
+    float: left;
+    margin-left: 3px;
+    width: 7.2em;
+    line-height: 2em;
+    text-align: right;
+}
+
+#username, #password {
+    float: left;
+    width: 10em;
+    text-align: right;
+}
+#submit{
+    float: left;
+}
+
+#uservalid{
+    float: left;
+    width: 6em;
+    padding: 3px;
+}
+
+#uservalid p{
+    display: inline;
+    background-color: #fffddd;
+    font-style: italic;
+}
+
+.hilite{
+    background-color: #fffddd;
+    font-style:italic;
+}
+
+.deleteditem{
+    text-decoration: line-through;
+    color: red;
+}
+
+.boxcontainer {
+    margin: 5px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 10px;
+}
+
+.task{
+    padding: 10px;
+    padding-top: 1px;
+    border: 2px solid #fffddd;
+    background-color: #ffeccc;
+}
+
+.tasksubmit{
+    margin-top: 0px;
+    float: right;
+    border: 2px solid #fffddd;
+    padding: 2px;
+    background-color: #ffcccc;
+}
+
+.clientbox{
+    margin-top: 6px;
+    margin-left: 5px;
+    padding:3px;
+    border: 2px dotted #fffddd;
+    float: left;
+}
+
+.taskinfo{
+/*    width: 34em;
+    margin: 5px auto;*/
+    float:left;
+    margin-left: 5px;
+    margin-top:5px;
+    padding: 2px;
+}
+
+.taskinfo span{
+    margin: 4px;
+}
+
+.editbutton
+{
+    text-align: center;
+}
+
+.editrow{
+position: absolute;
+top: 70%;
+left: 20%;
+margin: 0px;
+padding: 2px;
+background-color: #ffddbb;
+/*z-index: 1;*/
+}
+
+.setupmenu{
+    width: 15em;
+    margin: 0 auto;
+    background-color: #ffddbb;
+    padding: 5px;
+    border: 3px solid #eedddd; 
+}
+
+.setupmenu a{
+    font-size: 1.5em;
+    line-height: 1.5;
+}
+
+.boxview {
+    display: inline;
+}
+
+.icon {
+    float: right;
+    height: 16px;
+    width: 16px;
+    padding-right: 3px;
+}
+
+.highlighted {
+    border-bottom: 5px solid #FFED18 !important;
+}

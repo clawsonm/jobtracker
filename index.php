@@ -1,0 +1,9 @@
+<?php
+require_once('includes/config.php');
+include('includes/header.php');
+include('includes/pagetop.php');
+include('includes/boxes/topmenu.php');
+?>
+<?php
+include('includes/footer.php');
+?>
