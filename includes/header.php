@@ -17,4 +17,5 @@ require_once("includes/config.php");
 
 </head>
 <body>
+<div id="body">
  

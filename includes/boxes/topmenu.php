@@ -3,10 +3,10 @@
 $teams = new JT_Teams();
 foreach ($teams->getList() as $team)
 {
-    echo('<a ');
+    echo('<a class="button');
     if(isset($_SESSION['display_team']) && $_SESSION['display_team'] == $team->getID())
-        echo('class="highlighted" ');
-    echo('href="tasklist.php?team=' . $team->getID());
+        echo(' highlighted');
+    echo('" href="tasklist.php?team=' . $team->getID());
     if(isset($_SESSION['display_status']) && $_SESSION['display_status'] != JT_Collection::HIDE)
         echo('&status=' . JT_Collection::HIDE);
     echo('">' . $team->getFullname() . '</a>');
@@ -14,11 +14,11 @@ foreach ($teams->getList() as $team)
 if($user->isAdmin())
 {
 ?>
-<a href="setupmenu.php">Setup</a>
+<a class="button" href="setupmenu.php">Setup</a>
 <?php
 }
 ?>
-<a href="taskdetail.php?task=NEW">Add Task</a>
-<a href="logout.php">Logout</a>
+<a class="button" href="taskdetail.php?task=NEW">Add Task</a>
+<a class="button" href="logout.php">Logout</a>
 </div>
 

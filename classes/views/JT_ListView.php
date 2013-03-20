@@ -30,9 +30,14 @@ abstract class JT_ListView implements JT_View
     {
 ?>
 <dl>
-<dt class="togglesection"><?php echo(ucwords($this->tableName) . ' List (' . $this->list->size() . ')'); ?></dt>
+<dt class="togglesection">
+<?php
+        echo(ucwords($this->tableName) . ' List (' .
+            $this->list->size() . ')' . $this->renderNewLink());
+?>
+</dt>
 <dd>
-<table id="<?php echo(strtolower(str_replace(' ', '', $this->tableName))); ?>list" class="tablesorter">
+<table id="<?php echo($this->cleanTableName()); ?>list" class="tablesorter">
 <thead>
 <tr>
 <?php
@@ -58,6 +63,13 @@ abstract class JT_ListView implements JT_View
 <?php
     }
 
+    protected function renderNewLink($ajax = true)
+    {
+        echo('<a class="button new-item-link' . ($ajax ? " ajaxform" : "" ) .
+            '" href="edit' . $this->cleanTableName() . '.php?id=-1">' .
+            'Add ' . ucwords($this->tableName) . '</a>');
+    }
+
     protected function renderIcon($url)
     {
         echo('<img class="icon" width="16" height="16" src="' . $url . '" />');
@@ -68,6 +80,10 @@ abstract class JT_ListView implements JT_View
         //we don't need anything the head right now
     }
 
+    private function cleanTableName()
+    {
+        return strtolower(str_replace(' ', '', $this->tableName));
+    }
 }
 
 ?>

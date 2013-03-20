@@ -117,11 +117,11 @@ $(document).ready(function(){
 
     //hiding dl/dt/dd
     //$("dd").slideUp("slow");
-    $("dt.togglesection").hover(function(){
-        $(this).addClass("hilite");
-	}, function(){
-        $(this).removeClass("hilite");
-	});
+    //$("dt.togglesection").hover(function(){
+    //    $(this).addClass("hilite");
+	//}, function(){
+    //    $(this).removeClass("hilite");
+	//});
     $("dt.togglesection").click(function(){
         $(this).next("dd").slideToggle("slow");
 	});

@@ -1,8 +1,11 @@
 body {
-    width:97%;
+    background-color: #FFFCEF;
+}
+
+#body {
+    width: 960px;
     margin: 10px auto;
     text-align: center;
-    background-color: #FFFCEF;
 }
 
 dl,dt,dd {
@@ -10,9 +13,14 @@ dl,dt,dd {
     margin: 0 auto;
 }
 
-.togglesection {
+dt.togglesection {
+    position: relative;
+    padding: 5px 0;
     font-size: medium;
     font-weight: bold;
+    border-radius: 7px;
+    background-color:#CFEEFF;
+    cursor: pointer;
 }
 
 .topmenu{
@@ -79,11 +87,6 @@ label span{
     display: inline;
     background-color: #fffddd;
     font-style: italic;
-}
-
-.hilite{
-    background-color: #fffddd;
-    font-style:italic;
 }
 
 .deleteditem{
@@ -174,6 +177,25 @@ background-color: #ffddbb;
     padding-right: 3px;
 }
 
-.highlighted {
-    border-bottom: 5px solid #FFED18 !important;
+a.highlighted {
+    background-color: #FFED18;
+/*    border-bottom: 5px solid #FFED18 !important;*/
+}
+
+.new-item-link {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    background-color:#A3FFD3;
+    border: 1px solid red;
+}
+
+a.button {
+    border-radius: 7px;
+    padding: 2px 4px;
+    text-decoration: none;
+}
+
+a.button:hover {
+    background-color: #FFED18;
 }
